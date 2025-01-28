@@ -1,2 +1,2 @@
-# odin-website
-Personal website sandbox.
+# personal-website
+Website sandbox for personal development by Ahren Agatep.

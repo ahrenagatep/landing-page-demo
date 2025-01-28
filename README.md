@@ -1,2 +1,2 @@
 # personal-website
-Website sandbox for personal development by Ahren Agatep.
+Website sandbox for personal development/learning purposes by Ahren Agatep.

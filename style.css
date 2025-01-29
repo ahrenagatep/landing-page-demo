@@ -37,7 +37,12 @@
 }
 .nav-links {
     list-style: none;
-    display: flex;
+    display: flex; /* this one keeps it horizontal... */
+    align-items: center;
+    gap: 20px;
+}
+.nav-links a {
+    display: inline-block;
     transition: all 0.3s ease;
     font-size: 24px;
 }
@@ -45,7 +50,9 @@
     margin-right: 25px;
 }
 .nav-links a:hover {
-    color: aliceblue;
+    /* color: aliceblue; */
+    transform: translate3d(-3px, -3px, 0px);
+    /* text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 20px aliceblue, 0 0 30px aliceblue; */
 }
 .right-bar {
     display: flex;

@@ -23,6 +23,7 @@
     font-family: 'NervFont', sans-serif;
     color: white;
     font-weight: 100;
+    transition: all 0.1s ease;
 }
 .navbar {
     display: flex;
@@ -34,10 +35,18 @@
 }
 .nav-main-container {
     background-color: #242424;
-    background-image: url('../resources/images/akira.jpg');
+    background-image: url('../resources/images/eva.jpeg'); /* BACKGROUND IMAGE HERE */
+    /* LIST OF GOOD BG CANDIDATES: 
+    sigils.jpeg
+    ramiel.jpeg
+    rifle.jpeg
+    eva02bw.jpeg
+    eva.jpeg
+    */
     background-size: cover;
     height: 500;
-    padding-bottom: 10px;
+    padding-bottom: 100px;
+    justify-content: center;
 }
 .nav-links {
     list-style: none;
@@ -47,7 +56,6 @@
 }
 .nav-links a {
     display: inline-block;
-    transition: all 0.3s ease;
     font-size: 24px;
 }
 .nav-links li {
@@ -56,7 +64,8 @@
 .nav-links a:hover {
     /* color: aliceblue; */
     transform: translate3d(-3px, -3px, 0px);
-    text-shadow: 0 0 5px #151515, 0 0 20px #FF312E, 0 0 30px rgb(255, 92, 92);
+    scale: 1.02;
+    text-shadow: 0 0 5px #000000, 0 0 30px #ff6363, 0 0 5px #ff0000;
 }
 .right-bar {
     display: flex;
@@ -67,6 +76,7 @@
     text-decoration: none;
     color: white;
     font-family: 'MagiFont', sans-serif;
+    letter-spacing: 1px;
 }
 
 .container-main {
@@ -75,13 +85,14 @@
     align-items: center;
     margin: 50px 150px;
     padding: 20px;
-    /* border: 1px solid red; */
+    /* border: 3px outset red; */
     border-radius: 8px;
     background-color: rgba(0,0,0,0.75);
 }
 .left-main, .right-main {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     flex: .45;
 }
@@ -101,9 +112,73 @@
     font-size: 64px;
     font-family: 'NervFont', sans-serif;
     padding-bottom: 20px;
+    letter-spacing: -1px;
 }
 .left-main h2 {
     font-size: 24px;
     font-family: 'MagiFont', sans-serif;
     text-wrap: wrap;
+    letter-spacing: 1px;
+}
+.left-main button {
+    color: white;
+    background-color: #151515;
+    height: fit-content;
+    font-size: 24px;
+    font-family: 'MagiFont', sans-serif;
+    letter-spacing: 1px;
+}
+.left-main a {
+    font-family: 'MagiFont', sans-serif;
+    font-size: 28px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    background-color: #0a0a0a;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.left-main a:hover {
+    transform: translate3d(-3px, -3px, 0px);
+    border-radius: 9px;
+    box-shadow: 0 0 5px #000000, 0 0 10px #ff6363, 0 0 5px #ff0000;
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #0f0f0f;
+    letter-spacing: 1px;
+    height: 400px;
+    padding: 20px;
+}
+.info-container h1 {
+    margin-bottom: 30px;
+    font-family: 'MagiFont', sans-serif;
+}
+.models-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.models-container img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 9px;
+    border: 4px ridge white;
+}
+.model {
+    padding-inline: 50px;
+    text-align: center;
+}
+.model h2 {
+    font-size: 24px;
+    font-family: 'MagiFont', sans-serif;
+    letter-spacing: 1px;
+}
+.model img:hover {
+    box-shadow: 0 0 15px #ffffff;
+    scale: 1.05;
 }

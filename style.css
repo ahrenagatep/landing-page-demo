@@ -29,9 +29,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to left, #030303, #3d0000);
+    background-image: linear-gradient(to left, #030303, #030303); /* 3d0000 is a really good red... */
     padding: 15px 30px;
     font-size: 24px;
+    border-bottom: 2px ridge rgb(22, 22, 22);
 }
 .nav-main-container {
     background-color: #242424;
@@ -79,7 +80,6 @@
     font-family: 'MagiFont', sans-serif;
     letter-spacing: 1px;
 }
-
 .container-main {
     display: flex;
     justify-content: space-around;
@@ -149,10 +149,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-image: linear-gradient(to top, #030303, #3d0000);
+    background-image: linear-gradient(to top, #030303, #030303); /* 3d0000 is a really good red... */
     letter-spacing: 1px;
     height: 400px;
     padding: 20px;
+    border-top: 2px ridge rgb(22, 22, 22);
+    border-bottom: 2px ridge rgb(22, 22, 22);
 }
 .info-container h1 {
     margin-bottom: 30px;
@@ -211,11 +213,12 @@
     align-items: center;
     height: 400px;
     background-color: black;
+    border-top: 2px ridge rgb(22, 22, 22);
 }
 .enlist-box {
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
+    border: 3px outset rgb(180, 0, 0);
     flex-direction: row;
     padding: 30px;
 }

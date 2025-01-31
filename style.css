@@ -29,13 +29,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #151515;
+    background-image: linear-gradient(to left, #030303, #3d0000);
     padding: 15px 30px;
     font-size: 24px;
 }
 .nav-main-container {
     background-color: #242424;
-    background-image: url('../resources/images/eva.jpeg'); /* BACKGROUND IMAGE HERE */
+    background-image: url('../resources/images/nerv.jpeg'); /* BACKGROUND IMAGE HERE */
     /* LIST OF GOOD BG CANDIDATES: 
     sigils.jpeg
     ramiel.jpeg
@@ -44,6 +44,7 @@
     eva.jpeg
     */
     background-size: cover;
+    background-attachment: fixed;
     height: 500;
     padding-bottom: 100px;
     justify-content: center;
@@ -87,7 +88,7 @@
     padding: 20px;
     /* border: 3px outset red; */
     border-radius: 8px;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.65);
 }
 .left-main, .right-main {
     display: flex;
@@ -128,7 +129,7 @@
     font-family: 'MagiFont', sans-serif;
     letter-spacing: 1px;
 }
-.left-main a {
+.left-main a, .enlist-right a {
     font-family: 'MagiFont', sans-serif;
     font-size: 28px;
     text-decoration: none;
@@ -138,7 +139,7 @@
     padding-left: 50px;
     padding-right: 50px;
 }
-.left-main a:hover {
+.left-main a:hover, .enlist-right a:hover {
     transform: translate3d(-3px, -3px, 0px);
     border-radius: 9px;
     box-shadow: 0 0 5px #000000, 0 0 10px #ff6363, 0 0 5px #ff0000;
@@ -148,7 +149,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #0f0f0f;
+    background-image: linear-gradient(to top, #030303, #3d0000);
     letter-spacing: 1px;
     height: 400px;
     padding: 20px;
@@ -181,4 +182,44 @@
 .model img:hover {
     box-shadow: 0 0 15px #ffffff;
     scale: 1.05;
+}
+.quote-container {
+    background-image: url('../resources/images/nerv.jpeg'); /* BACKGROUND IMAGE HERE */
+    /* LIST OF GOOD BG CANDIDATES: 
+    sigils.jpeg
+    ramiel.jpeg
+    rifle.jpeg
+    eva02bw.jpeg
+    eva.jpeg
+    */
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.quote-container h1 {
+    font-family: 'NervFont', sans-serif;
+    font-size: 48px;
+    color: whitesmoke;
+}
+.enlist-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: black;
+}
+.enlist-box {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    flex-direction: row;
+    padding: 30px;
+}
+.enlist-left {
+    display: flex;
+    padding-inline: 20px;
 }
